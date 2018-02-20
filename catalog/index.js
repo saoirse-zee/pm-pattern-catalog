@@ -14,7 +14,12 @@ const fundamentals = {
       path: '/palette',
       title: 'Palette',
       content: pageLoader(() => import('./palette.md'))
-    }
+    },
+    {
+      path: '/typography',
+      title: 'Typography',
+      content: pageLoader(() => import('./typography.md'))
+    },
   ]
 }
 
