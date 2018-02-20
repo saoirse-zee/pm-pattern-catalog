@@ -7,28 +7,42 @@ import { Catalog, pageLoader } from "catalog";
 import globalStyles from './styles.css';
 // is there a good way to modularize styles?
 
+const fundamentals = {
+  title: 'Fundamentals',
+  pages: [
+    {
+      path: '/palette',
+      title: 'Palette',
+      content: pageLoader(() => import('./palette.md'))
+    }
+  ]
+}
+
+const components = {
+  title: 'Components',
+  pages: [
+    {
+      path: "/button",
+      title: "Button",
+      content: pageLoader(() => import("./button.md"))
+    }
+  ]
+}
+
 const pages = [
   {
     path: "/",
     title: "Welcome",
     content: pageLoader(() => import("./WELCOME.md"))
   },
-  {
-    path: "/button",
-    title: "Button",
-    content: pageLoader(() => import("./button.md"))
-  },
+  fundamentals,
+  components,
 ];
-
-const pageGroup = [{
-  title: 'My pages',
-  pages,
-}]
 
 ReactDOM.render(
   <Catalog
     title="Catalog"
-    pages={pageGroup}
+    pages={pages}
   />,
   document.getElementById("catalog")
 );
