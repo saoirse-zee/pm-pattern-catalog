@@ -1,5 +1,8 @@
-.button {
-  background: aqua;
+/* Styles are named-spaced with `patman` and follow the same BEM convention used by Lightning. */
+/* https://www.lightningdesignsystem.com/guidelines/markup-and-style/ */
+
+.patman-button_brand {
+  background: steelblue;
   border-radius: 10px;
   border: none;
   color: white;
