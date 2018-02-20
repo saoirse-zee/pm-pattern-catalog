@@ -1,0 +1,13 @@
+{
+  "name": "patman-pattern-catalog",
+  "description": "",
+  "dependencies": {
+    "catalog": "^3.2.4",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "scripts": {
+    "catalog-start": "catalog start",
+    "catalog-build": "catalog build"
+  }
+}
