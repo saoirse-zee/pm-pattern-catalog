@@ -1,6 +1,6 @@
 .button {
-  background: pink;
+  background: aqua;
+  border-radius: 10px;
+  border: none;
   color: white;
-  padding: 1rem;
-  font-size: 24px;
 }

@@ -1,6 +1,7 @@
 ```html
+dark=true
 ---
-<div class="button" onclick="boo()">
+<div class="slds-button_brand button" onclick="boo()">
   Boo
 </div>
 ```
