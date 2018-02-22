@@ -30,7 +30,12 @@ const components = {
       path: "/button",
       title: "Button",
       content: pageLoader(() => import("./button.md"))
-    }
+    },
+    {
+      path: "/tabbed-panel",
+      title: "Tabbed panel",
+      content: pageLoader(() => import("./tabbed-panel.md"))
+    },
   ]
 }
 

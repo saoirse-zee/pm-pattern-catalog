@@ -7,3 +7,31 @@
   border: none;
   color: white;
 }
+
+/************************************************/
+/* Tabbed panel */
+/************************************************/
+/* Zap SLDS border styles */
+.patman-tabbed-panel .slds-tabs_scoped__content,
+.patman-tabbed-panel .slds-tabs_scoped__nav,
+.patman-tabbed-panel .slds-tabs_scoped__item:first-child .slds-tabs_scoped__link {
+  border-radius: 0;
+  border: none;
+}
+/* Content area */
+.patman-tabbed-panel .slds-tabs_scoped__content {
+  background: #DBFCFF;
+}
+/* Tabs */
+.patman-tabbed-panel .slds-tabs_scoped__nav {
+  background: #00AFBF;
+}
+/* Inactive tabs */
+.slds-tabs_scoped__link {
+  color: white;
+}
+/* Active tabs */
+.patman-tabbed-panel .slds-is-active .slds-tabs_scoped__link {
+  background: #DBFCFF;
+  color: #00AFBF;
+}
