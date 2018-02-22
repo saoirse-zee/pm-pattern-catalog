@@ -12,6 +12,7 @@
 /* Cool theme */
 :root {
   --brand-color-primary: #00AFBF;
+  --brand-color-primary--darken: #0096A3;
   --brand-color-light: #DBFCFF;
   --brand-color-white: #FFFFFF;
 }
@@ -43,7 +44,10 @@
 /* Zap SLDS border styles */
 .patman-tabbed-panel .slds-tabs_scoped__content,
 .patman-tabbed-panel .slds-tabs_scoped__nav,
-.patman-tabbed-panel .slds-tabs_scoped__item:first-child .slds-tabs_scoped__link {
+.patman-tabbed-panel .slds-tabs_scoped__item:first-child .slds-tabs_scoped__link,
+.patman-tabbed-panel .slds-tabs_scoped__link,
+.patman-tabbed-panel .slds-tabs_scoped__link:hover
+{
   border-radius: 0;
   border: none;
 }
@@ -60,11 +64,14 @@
   color: var(--brand-color-white);
 }
 /* Active tabs */
-.patman-tabbed-panel .slds-is-active .slds-tabs_scoped__link {
+.patman-tabbed-panel .slds-is-active .slds-tabs_scoped__link,
+.patman-tabbed-panel .slds-is-active .slds-tabs_scoped__link:hover,
+.patman-tabbed-panel .slds-is-active .slds-tabs_scoped__link:focus {
   background: var(--brand-color-light);
   color: var(--brand-color-primary);
+  text-decoration: none;
 }
-/* Tabs are evenly spaced across available area */
-.patman-tabbed-panel .slds-tabs_scoped__nav {
-
+.patman-tabbed-panel .slds-tabs_scoped__link:hover {
+  background: var(--brand-color-primary--darken);
+  color: var(--brand-color-white);
 }
