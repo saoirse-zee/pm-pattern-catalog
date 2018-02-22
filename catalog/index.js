@@ -29,6 +29,7 @@ const components = {
     {
       path: "/button",
       title: "Button",
+      scripts: ['mockEventHandler.js'],
       content: pageLoader(() => import("./button.md"))
     },
     {
