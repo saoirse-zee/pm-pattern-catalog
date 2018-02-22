@@ -1,12 +1,41 @@
 /* Styles are named-spaced with `patman` and follow the same BEM convention used by Lightning. */
 /* https://www.lightningdesignsystem.com/guidelines/markup-and-style/ */
 
+/* Note: IE does not support CSS vars, so this must be run through a CSS preprocessor! */
+
+
+
+/************************************************/
+/* Brand colors */
+/************************************************/
+
+/* Cool theme */
+:root {
+  --brand-color-primary: #00AFBF;
+  --brand-color-light: #DBFCFF;
+  --brand-color-white: #FFFFFF;
+}
+
+/* Mute theme */
+/* :root {
+  --brand-color-primary: #4A4A4A;
+  --brand-color-light: #FFF8F2;
+  --brand-color-white: #FFFFFF;
+} */
+
+
+
+/************************************************/
+/* Button */
+/************************************************/
 .patman-button_brand {
-  background: steelblue;
+  background: var(--brand-color-primary);
   border-radius: 10px;
   border: none;
-  color: white;
+  color: var(--brand-color-white);
 }
+
+
 
 /************************************************/
 /* Tabbed panel */
@@ -20,18 +49,22 @@
 }
 /* Content area */
 .patman-tabbed-panel .slds-tabs_scoped__content {
-  background: #DBFCFF;
+  background: var(--brand-color-light);
 }
 /* Tabs */
 .patman-tabbed-panel .slds-tabs_scoped__nav {
-  background: #00AFBF;
+  background: var(--brand-color-primary);
 }
 /* Inactive tabs */
 .slds-tabs_scoped__link {
-  color: white;
+  color: var(--brand-color-white);
 }
 /* Active tabs */
 .patman-tabbed-panel .slds-is-active .slds-tabs_scoped__link {
-  background: #DBFCFF;
-  color: #00AFBF;
+  background: var(--brand-color-light);
+  color: var(--brand-color-primary);
+}
+/* Tabs are evenly spaced across available area */
+.patman-tabbed-panel .slds-tabs_scoped__nav {
+
 }
