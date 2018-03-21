@@ -15,12 +15,12 @@ const fundamentals = {
     {
       path: '/palette',
       title: 'Palette',
-      content: pageLoader(() => import('./palette.md'))
+      content: pageLoader(() => import('./catalog-pages/palette.md'))
     },
     {
       path: '/typography',
       title: 'Typography',
-      content: pageLoader(() => import('./typography.md'))
+      content: pageLoader(() => import('./catalog-pages/typography.md'))
     },
   ]
 }
@@ -32,19 +32,19 @@ const components = {
       imports: { Button: require('./components/Button.jsx') },
       path: "/button",
       title: "Button",
-      content: pageLoader(() => import("./button.md"))
+      content: pageLoader(() => import("./catalog-pages/button.md"))
     },
     {
       imports: { EventInstanceItem: require('./components/EventInstanceItem.jsx') },
       path: "/event-instance-item",
       title: "EventInstanceItem",
-      content: pageLoader(() => import("./event-instance-item.md"))
+      content: pageLoader(() => import("./catalog-pages/event-instance-item.md"))
     },
     {
       imports: { EventInstanceList: require('./components/EventInstanceList.jsx') },
       path: "/event-instance-list",
       title: "EventInstanceList",
-      content: pageLoader(() => import("./event-instance-list.md"))
+      content: pageLoader(() => import("./catalog-pages/event-instance-list.md"))
     }
   ]
 }
@@ -53,7 +53,7 @@ const pages = [
   {
     path: "/",
     title: "Welcome",
-    content: pageLoader(() => import("./WELCOME.md"))
+    content: pageLoader(() => import("./catalog-pages/WELCOME.md"))
   },
   fundamentals,
   components,
