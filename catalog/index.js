@@ -2,9 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Catalog, pageLoader } from "catalog";
 
-// Import our Patman styles like this...
+// Import Bootstrap css and make it globally available:
+import 'bootstrap/dist/css/bootstrap.min.css'
+
+// Import our Patman styles like this:
 import globalStyles from './styles.css';
-// ...which is dumb, but works for demonstration purposes.
+// It's kinda dumb to put our styles in the global space, but works for demonstration purposes.
 
 const fundamentals = {
   title: 'Fundamentals',

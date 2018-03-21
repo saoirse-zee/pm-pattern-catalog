@@ -42,6 +42,6 @@
 /************************************************/
 
 .eventInstanceItem {
-  display: flex;
-  justify-content: space-between;
+  border: 1px solid pink;
+  padding: 10px;
 }

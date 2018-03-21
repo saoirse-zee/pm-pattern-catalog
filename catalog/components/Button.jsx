@@ -1,12 +1,12 @@
 import React from 'react'
+import { Button as RS_Button } from 'reactstrap'
 
 const Button = ({ label, onClick }) => (
-  <button
-    className="patman-button_brand"
-    onClick={onClick}
+  <RS_Button
+    color="primary"
   >
     { label }
-  </button>
+  </RS_Button>
 )
 
 export default Button

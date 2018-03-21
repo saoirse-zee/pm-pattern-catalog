@@ -1,18 +1,21 @@
 import React from 'react'
-import Button from './Button'
+import { Button, Container, Row, Col } from 'reactstrap'
 
 const EventInstanceItem = ({ date, isAvailable }) => (
-  <div className="eventInstanceItem">
-    <p>{date}</p>
-      {
-        isAvailable
-          ? <Button
-              label="Buy"
-              onClick={console.log('Handle the "Buy" click.')}
-            />
+  <Container className="eventInstanceItem">
+    <Row>
+      <Col xs="9">
+        <p>{ date }</p>
+      </Col>
+      <Col xs="3">
+        {
+          isAvailable
+          ? <Button color="primary">Buy</Button>
           : <p>Sold out</p>
-      }
-  </div>
+        }
+      </Col>
+    </Row>
+  </Container>
 )
 
 export default EventInstanceItem
