@@ -4,10 +4,10 @@ import { Button, Container, Row, Col } from 'reactstrap'
 const EventInstanceItem = ({ date, isAvailable }) => (
   <Container className="eventInstanceItem">
     <Row>
-      <Col xs="9">
+      <Col xs="8">
         <p>{ date }</p>
       </Col>
-      <Col xs="3">
+      <Col xs="4">
         {
           isAvailable
           ? <Button color="primary">Buy</Button>

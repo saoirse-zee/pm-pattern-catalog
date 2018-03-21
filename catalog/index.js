@@ -39,6 +39,12 @@ const components = {
       path: "/event-instance-item",
       title: "EventInstanceItem",
       content: pageLoader(() => import("./event-instance-item.md"))
+    },
+    {
+      imports: { EventInstanceList: require('./components/EventInstanceList.jsx') },
+      path: "/event-instance-list",
+      title: "EventInstanceList",
+      content: pageLoader(() => import("./event-instance-list.md"))
     }
   ]
 }
