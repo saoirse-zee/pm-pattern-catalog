@@ -6,10 +6,11 @@ Lightning sets the base styles, and then we overwrite whatever we need.
 Use it when you need to click on a thing.
 ```
 
-```html
-span: 1
+```react
+span: 3
 ---
-<div class="slds-button_brand patman-button_brand" onclick="placeholder()">
-  Boo
-</div>
+<Button
+  label="Click me"
+  onClick={() => { console.log('You clicked!') }}
+/>
 ```

@@ -27,10 +27,16 @@ const components = {
   title: 'Components',
   pages: [
     {
+      imports: { Button: require('./components/Button.jsx') },
       path: "/button",
       title: "Button",
-      scripts: ['mockEventHandler.js'],
       content: pageLoader(() => import("./button.md"))
+    },
+    {
+      imports: { EventInstanceItem: require('./components/EventInstanceItem.jsx') },
+      path: "/event-instance-item",
+      title: "EventInstanceItem",
+      content: pageLoader(() => import("./event-instance-item.md"))
     },
     {
       path: "/tabbed-panel",

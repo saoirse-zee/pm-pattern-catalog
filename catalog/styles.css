@@ -75,3 +75,13 @@
   background: var(--brand-color-primary--darken);
   color: var(--brand-color-white);
 }
+
+
+/************************************************/
+/* EventInstanceItem */
+/************************************************/
+
+.eventInstanceItem {
+  display: flex;
+  justify-content: space-between;
+}
