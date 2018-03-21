@@ -40,8 +40,16 @@
 /************************************************/
 /* EventInstanceItem */
 /************************************************/
-
 .eventInstanceItem {
-  border: 1px solid pink;
   padding: 10px;
+}
+
+
+/************************************************/
+/* FilterButton */
+/************************************************/
+.filterButton {
+  border-radius: 10px;
+  font-size: 0.7rem;
+  margin-right: 0.5rem;
 }

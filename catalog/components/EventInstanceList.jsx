@@ -1,13 +1,14 @@
 import React from 'react'
 import { ButtonGroup, Button, Container, Row, Col } from 'reactstrap'
+import FilterButton from './FilterButton'
 import EventInstanceItem from './EventInstanceItem'
 
 const EventInstanceList = ({ instanceList }) => (
   <Container className="eventInstanceList">
     <Row>
-      <Button color="link">Available</Button>
-      <Button color="link">Matinee</Button>
-      <Button color="link">Sundays</Button>
+      <FilterButton label="Available" isSelected={true} />
+      <FilterButton label="Matinee" isSelected={false} />
+      <FilterButton label="Sundays" isSelected={false} />
     </Row>
 
     <Row>

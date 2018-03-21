@@ -10,7 +10,7 @@ const EventInstanceItem = ({ date, isAvailable }) => (
       <Col xs="4">
         {
           isAvailable
-          ? <Button color="primary">Buy</Button>
+          ? <Button color="primary" outline>Buy</Button>
           : <p>Sold out</p>
         }
       </Col>

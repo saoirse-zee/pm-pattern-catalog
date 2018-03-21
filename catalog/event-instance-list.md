@@ -4,6 +4,7 @@ This component uses the EventInstanceItem component.
 
 ```react
 span: 2.5
+
 ---
 <EventInstanceList
   instanceList={[
