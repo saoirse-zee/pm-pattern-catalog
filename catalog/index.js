@@ -2,10 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Catalog, pageLoader } from "catalog";
 
-// Lightning Design system files can be imported from node_modules.
-// Import our Patman styles like this.
+// Import our Patman styles like this...
 import globalStyles from './styles.css';
-// is there a good way to modularize styles?
+// ...which is dumb, but works for demonstration purposes.
 
 const fundamentals = {
   title: 'Fundamentals',
@@ -37,12 +36,7 @@ const components = {
       path: "/event-instance-item",
       title: "EventInstanceItem",
       content: pageLoader(() => import("./event-instance-item.md"))
-    },
-    {
-      path: "/tabbed-panel",
-      title: "Tabbed panel",
-      content: pageLoader(() => import("./tabbed-panel.md"))
-    },
+    }
   ]
 }
 

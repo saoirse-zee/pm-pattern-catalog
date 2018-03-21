@@ -31,48 +31,8 @@
 /************************************************/
 .patman-button_brand {
   background: var(--brand-color-primary);
-  border-radius: 10px;
+  border-radius: 5px;
   border: none;
-  color: var(--brand-color-white);
-}
-
-
-
-/************************************************/
-/* Tabbed panel */
-/************************************************/
-/* Zap SLDS border styles */
-.patman-tabbed-panel .slds-tabs_scoped__content,
-.patman-tabbed-panel .slds-tabs_scoped__nav,
-.patman-tabbed-panel .slds-tabs_scoped__item:first-child .slds-tabs_scoped__link,
-.patman-tabbed-panel .slds-tabs_scoped__link,
-.patman-tabbed-panel .slds-tabs_scoped__link:hover
-{
-  border-radius: 0;
-  border: none;
-}
-/* Content area */
-.patman-tabbed-panel .slds-tabs_scoped__content {
-  background: var(--brand-color-light);
-}
-/* Tabs */
-.patman-tabbed-panel .slds-tabs_scoped__nav {
-  background: var(--brand-color-primary);
-}
-/* Inactive tabs */
-.slds-tabs_scoped__link {
-  color: var(--brand-color-white);
-}
-/* Active tabs */
-.patman-tabbed-panel .slds-is-active .slds-tabs_scoped__link,
-.patman-tabbed-panel .slds-is-active .slds-tabs_scoped__link:hover,
-.patman-tabbed-panel .slds-is-active .slds-tabs_scoped__link:focus {
-  background: var(--brand-color-light);
-  color: var(--brand-color-primary);
-  text-decoration: none;
-}
-.patman-tabbed-panel .slds-tabs_scoped__link:hover {
-  background: var(--brand-color-primary--darken);
   color: var(--brand-color-white);
 }
 
